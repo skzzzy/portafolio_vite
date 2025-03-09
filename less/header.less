@@ -1,0 +1,82 @@
+header {
+    &.inicio {
+      background-image: url('../assets/hero.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      .barra-navegacion {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        position: absolute;
+        top: 0;
+        background: rgba(26, 8, 38, 0.9);
+  
+        .logo {
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: @primary-color;
+        }
+  
+        .enlaces-nav {
+          list-style: none;
+          display: flex;
+  
+          li {
+            margin: 0 10px;
+            position: relative;
+  
+            a {
+              text-decoration: none;
+              color: @primary-color;
+              font-weight: bold;
+              transition: color 0.3s;
+  
+              &:hover {
+                color: @secondary-color;
+              }
+            }
+  
+            .submenu {
+              display: none;
+              position: absolute;
+              top: 100%;
+              right: 0;
+              background: @bg-light;
+              border-radius: 5px;
+              padding: 10px;
+              list-style: none;
+              z-index: 1000;
+              min-width: 150px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+              li {
+                margin: 5px 0;
+  
+                a {
+                  color: @primary-color;
+                  font-size: 0.9rem;
+  
+                  &:hover {
+                    color: @secondary-color;
+                  }
+                }
+              }
+            }
+  
+            &:hover .submenu {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }

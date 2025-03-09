@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Lizzy Sauceda</title>
+    <link rel="stylesheet" href="less/main.less">
+    <script src="src/java/submenu.js"></script>
+</head>
+<body>
+  {{> header}}
+  <main>
+      <section id="sobre-mi" class="seccion sobre-mi">
+          <h2>¿Quién Soy?</h2>
+          <img src="img/FotoLizzy.jpg" alt="FotoLizzy">
+          <p>
+              ¡Hola! Mi nombre es Lizzy Sauceda, estudiante de la carrera de Ingeniería en Sistemas. Actualmente, estoy cursando mi cuarto año.
+          </p>
+          <p>
+              A lo largo de estos años he aprendido sobre diversos lenguajes de programación y la creación de distintos programas, destacando mi trabajo en el desarrollo web.
+          </p>
+          <p>
+              Mi pasión por la tecnología me ha impulsado a explorar diversas herramientas modernas, destacando el diseño y desarrollo de páginas web, un medio de comunicación clave en la actualidad.
+          </p>
+
+          <h2>Lenguajes que manejo</h2>
+          <ul class="lenguajes-lista">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Java</li>
+              <li>C</li>
+              <li>C++</li>
+              <li>SQL</li>
+          </ul>
+
+      </section>
+
+      <section id="proyectos" class="seccion proyectos">
+          <h2>Proyectos</h2>
+          <section>
+              <div class="lista-proyectos">
+                  <div class="proyecto">
+                      <a href="https://skzzzy.github.io/Carrusel/" target="_blank">
+                          <img src="img/Carrusel.png" alt="Carrusel de Fotos">
+                          <h3>Carrusel de Fotos</h3>
+                          <p>
+                              ste proyecto trata sobre un carrusel de fotos que puede ser bastante llamativo para los sitios web. El carrusel de fotos puede ser de gran ayuda para mostrar en las paginas web. Puede llegar a usarse para promocionar los productos o eventos en los que se han participado.
+                          </p>
+                      </a>
+                  </div>
+                  <div class="proyecto">
+                      <a href="https://skzzzy.github.io/Bunns_Flowers/" target="_blank">
+                          <img src="img/Bunns_Flowers.png" alt="Bunns Flowers Sitio Web">
+                          <h3>Sitio Web -- Bunns Flowers</h3>
+                          <p>
+                              Este proyecto se basa en un sitio web para mi emprendimiento de flores eternas. Este sitio web muestra la información del emprendimiento, nos muestra los diferentes productos que este ofrece y de igual forma muestra los diferentes medios de comunicación.
+                          </p>
+                      </a>
+                  </div>
+              </div>
+          </section>
+      </section>
+  </main>
+  {{> footer}}
+</body>
+</html>

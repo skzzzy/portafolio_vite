@@ -1,0 +1,93 @@
+.contacto {
+    padding: 50px 20px;
+    text-align: center;
+    background: @bg-light;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+  
+    h2 {
+      color: @secondary-color;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      color: @primary-color;
+      margin-bottom: 10px;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 500px;
+      margin: 0 auto;
+  
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        background: darken(@bg-light, 10%);
+        color: @text-color;
+  
+        &[type="text"],
+        &[type="email"] {
+          background: darken(@bg-light, 10%);
+        }
+  
+        &:focus {
+          outline: none;
+          border: 2px solid @secondary-color;
+        }
+      }
+  
+      textarea {
+        height: 120px;
+        resize: none;
+      }
+  
+      button {
+        background: @primary-color;
+        color: @text-color;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s;
+  
+        &:hover {
+          background: @secondary-color;
+        }
+      }
+    }
+  }
+  
+  /* Redes sociales */
+  .redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  
+    a {
+      text-decoration: none;
+      transition: transform 0.3s;
+  
+      &:hover {
+        transform: scale(1.1);
+      }
+  
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  

@@ -1,0 +1,39 @@
+/* Variables */
+@card-bg: #3e1a5a;
+@card-radius: 10px;
+@gap-size: 20px;
+@hover-scale: 1.05;
+
+/* Proyectos */
+.proyectos {
+  .lista-proyectos {
+    display: flex;
+    justify-content: center;
+    gap: @gap-size;
+    flex-wrap: wrap;
+  }
+
+  .proyecto {
+    max-width: 300px;
+    text-align: left;
+    background: @card-bg;
+    padding: 10px;
+    border-radius: @card-radius;
+
+    img {
+      width: 100%;
+      border-radius: @card-radius;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(@hover-scale);
+      }
+    }
+  }
+}
